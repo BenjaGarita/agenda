@@ -1,0 +1,47 @@
+<h1>Lista de Contactos</h1>
+
+<table>
+  <tr>
+    <th>Foto</th>
+    <th>Matricula</th>
+    <th>Nombre</th>
+    <th>Sexo</th>
+    <th>Edad</th>
+    <th>Domicilio</th>
+    <th>Colonia</th>
+    <th>Ciudad</th>
+    <th>Fecha alta</th>
+    <th>Telefono</th>
+    <th>Edo civil</th>
+    <th>Email</th>
+    <th>Motivo consulta</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @contactos.each do |contacto| %>
+  <tr>
+    <td><%= image_tag contacto.foto %></td>
+    <td><%= contacto.matricula %></td>
+    <td><%= contacto.nombre %></td>
+    <td><%= contacto.sexo %></td>
+    <td><%= contacto.edad %></td>
+    <td><%= contacto.domicilio %></td>
+    <td><%= contacto.colonia %></td>
+    <td><%= contacto.ciudad %></td>
+    <td><%= contacto.fecha_alta %></td>
+    <td><%= contacto.telefono %></td>
+    <td><%= contacto.Edo_Civil %></td>
+    <td><%= contacto.email %></td>
+    <td><%= contacto.motivo_consulta %></td>
+    <td><%= link_to 'Show', contacto %></td>
+    <td><%= link_to 'Edit', edit_contacto_path(contacto) %></td>
+    <td><%= link_to 'Destroy', contacto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Contacto', new_contacto_path %>

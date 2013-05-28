@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  matricula: 1
+  tema: MyString
+  fecha: 2013-05-15
+  estado: MyString
+  hora_de_inicio: 2013-05-15 22:22:24
+  hora_fin: 2013-05-15 22:22:24
+  resultado: MyString
+
+two:
+  matricula: 1
+  tema: MyString
+  fecha: 2013-05-15
+  estado: MyString
+  hora_de_inicio: 2013-05-15 22:22:24
+  hora_fin: 2013-05-15 22:22:24
+  resultado: MyString

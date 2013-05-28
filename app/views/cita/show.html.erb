@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Matricula:</b>
+  <%= @citum.matricula %>
+</p>
+
+<p>
+  <b>Tema:</b>
+  <%= @citum.tema %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @citum.fecha %>
+</p>
+
+<p>
+  <b>Estado:</b>
+  <%= @citum.estado %>
+</p>
+
+<p>
+  <b>Hora de inicio:</b>
+  <%= @citum.hora_de_inicio %>
+</p>
+
+<p>
+  <b>Hora fin:</b>
+  <%= @citum.hora_fin %>
+</p>
+
+<p>
+  <b>Resultado:</b>
+  <%= @citum.resultado %>
+</p>
+
+
+<%= link_to 'Edit', edit_citum_path(@citum) %> |
+<%= link_to 'Back', cita_path %>

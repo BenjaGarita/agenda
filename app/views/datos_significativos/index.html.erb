@@ -1,0 +1,53 @@
+<h1>Lista de los Datos significativos recientes</h1>
+
+<table>
+  <tr>
+    <th>Matricula</th>
+    <th>Cambio residencia</th>
+    <th>Accidentes</th>
+    <th>Muertes</th>
+    <th>Separacion</th>
+    <th>Divorcio</th>
+    <th>Problemas escolares</th>
+    <th>Perdida de empleo</th>
+    <th>Enfermedades</th>
+    <th>Problemas economicos</th>
+    <th>Asalto</th>
+    <th>Secuestro</th>
+    <th>Carcel</th>
+    <th>Problemas genericos</th>
+    <th>Embarazo</th>
+    <th>Otros</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @datos_significativos.each do |datos_significativo| %>
+  <tr>
+    <td><%= datos_significativo.matricula %></td>
+    <td><%= datos_significativo.cambio_residencia %></td>
+    <td><%= datos_significativo.accidentes %></td>
+    <td><%= datos_significativo.muertes %></td>
+    <td><%= datos_significativo.separacion %></td>
+    <td><%= datos_significativo.divorcio %></td>
+    <td><%= datos_significativo.problemas_escolares %></td>
+    <td><%= datos_significativo.perdida_de_empleo %></td>
+    <td><%= datos_significativo.enfermedades %></td>
+    <td><%= datos_significativo.problemas_economicos %></td>
+    <td><%= datos_significativo.asalto %></td>
+    <td><%= datos_significativo.secuestro %></td>
+    <td><%= datos_significativo.carcel %></td>
+    <td><%= datos_significativo.problemas_genericos %></td>
+    <td><%= datos_significativo.embarazo %></td>
+    <td><%= datos_significativo.otros %></td>
+    <td><%= link_to 'Show', datos_significativo %></td>
+    <td><%= link_to 'Edit', edit_datos_significativo_path(datos_significativo) %></td>
+    <td><%= link_to 'Destroy', datos_significativo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Datos significativo', new_datos_significativo_path %>

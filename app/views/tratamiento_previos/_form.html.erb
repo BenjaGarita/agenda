@@ -1,0 +1,56 @@
+<%= form_for(@tratamiento_previo) do |f| %>
+  <% if @tratamiento_previo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tratamiento_previo.errors.count, "error") %> prohibited this tratamiento_previo from being saved:</h2>
+
+      <ul>
+      <% @tratamiento_previo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :matricula %><br />
+    <%= f.text_field :matricula %>
+  </div>
+
+  <div class="field">
+    <% psicoterapia = {
+            'Psicoterapia Individual' => 'Psicoterapia Individual',
+            'De grupo' => 'De grupo',
+            'Familiar' => 'Familiar',
+            'De pareja' => 'De pareja',
+
+    } %>
+    <%= f.label :psicoterapia %> <br/>
+    <%= f.select :psicoterapia, psicoterapia %>
+  </div>
+
+
+
+  <div class="field">
+    <%= f.label :motivo %><br />
+    <%= f.text_field :motivo %>
+  </div>
+  <div class="field">
+    <%= f.label :medicacion %><br />
+    <%= f.text_field :medicacion %>
+  </div>
+  <div class="field">
+    <%= f.label :internamiento %><br />
+    <%= f.text_field :internamiento %>
+  </div>
+  <div class="field">
+    <%= f.label :otros_servicios %><br />
+    <%= f.text_field :otros_servicios %>
+  </div>
+  <div class="field">
+    <%= f.label :circunstancias_consultas %><br />
+    <%= f.text_field :circunstancias_consultas %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

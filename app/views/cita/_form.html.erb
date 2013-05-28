@@ -1,0 +1,45 @@
+<%= form_for(@citum) do |f| %>
+  <% if @citum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@citum.errors.count, "error") %> prohibited this citum from being saved:</h2>
+
+      <ul>
+      <% @citum.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :matricula %><br />
+    <%= f.number_field :matricula %>
+  </div>
+  <div class="field">
+    <%= f.label :tema %><br />
+    <%= f.text_field :tema %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha %><br />
+    <%= f.date_select :fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :estado %><br />
+    <%= f.text_field :estado %>
+  </div>
+  <div class="field">
+    <%= f.label :hora_de_inicio %><br />
+    <%= f.time_select :hora_de_inicio %>
+  </div>
+  <div class="field">
+    <%= f.label :hora_fin %><br />
+    <%= f.time_select :hora_fin %>
+  </div>
+  <div class="field">
+    <%= f.label :resultado %><br />
+    <%= f.text_field :resultado %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

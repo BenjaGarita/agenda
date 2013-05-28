@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  foto: MyString
+  matricula: 1
+  nombre: MyString
+  sexo: MyString
+  edad: MyString
+  domicilio: MyString
+  colonia: MyString
+  ciudad: MyString
+  fecha_alta: 2013-05-15
+  telefono: MyString
+  Edo_Civil: MyString
+  email: MyString
+  motivo_consulta: MyString
+
+two:
+  foto: MyString
+  matricula: 1
+  nombre: MyString
+  sexo: MyString
+  edad: MyString
+  domicilio: MyString
+  colonia: MyString
+  ciudad: MyString
+  fecha_alta: 2013-05-15
+  telefono: MyString
+  Edo_Civil: MyString
+  email: MyString
+  motivo_consulta: MyString

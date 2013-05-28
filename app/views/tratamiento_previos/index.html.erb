@@ -1,0 +1,35 @@
+<h1>Listing tratamiento_previos</h1>
+
+<table>
+  <tr>
+    <th>Matricula</th>
+    <th>Psicoterapia</th>
+    <th>Motivo</th>
+    <th>Medicacion</th>
+    <th>Internamiento</th>
+    <th>Otros servicios</th>
+    <th>Circunstancias consultas</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tratamiento_previos.each do |tratamiento_previo| %>
+  <tr>
+    <td><%= tratamiento_previo.matricula %></td>
+    <td><%= tratamiento_previo.psicoterapia %></td>
+    <td><%= tratamiento_previo.motivo %></td>
+    <td><%= tratamiento_previo.medicacion %></td>
+    <td><%= tratamiento_previo.internamiento %></td>
+    <td><%= tratamiento_previo.otros_servicios %></td>
+    <td><%= tratamiento_previo.circunstancias_consultas %></td>
+    <td><%= link_to 'Show', tratamiento_previo %></td>
+    <td><%= link_to 'Edit', edit_tratamiento_previo_path(tratamiento_previo) %></td>
+    <td><%= link_to 'Destroy', tratamiento_previo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tratamiento previo', new_tratamiento_previo_path %>

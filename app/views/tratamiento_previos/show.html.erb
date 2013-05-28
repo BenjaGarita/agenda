@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Matricula:</b>
+  <%= @tratamiento_previo.matricula %>
+</p>
+
+<p>
+  <b>Psicoterapia:</b>
+  <%= @tratamiento_previo.psicoterapia %>
+</p>
+
+<p>
+  <b>Motivo:</b>
+  <%= @tratamiento_previo.motivo %>
+</p>
+
+<p>
+  <b>Medicacion:</b>
+  <%= @tratamiento_previo.medicacion %>
+</p>
+
+<p>
+  <b>Internamiento:</b>
+  <%= @tratamiento_previo.internamiento %>
+</p>
+
+<p>
+  <b>Otros servicios:</b>
+  <%= @tratamiento_previo.otros_servicios %>
+</p>
+
+<p>
+  <b>Circunstancias consultas:</b>
+  <%= @tratamiento_previo.circunstancias_consultas %>
+</p>
+
+
+<%= link_to 'Edit', edit_tratamiento_previo_path(@tratamiento_previo) %> |
+<%= link_to 'Back', tratamiento_previos_path %>

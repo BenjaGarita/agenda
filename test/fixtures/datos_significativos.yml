@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  matricula: 1
+  cambio_residencia: MyString
+  accidentes: MyString
+  muertes: MyString
+  separacion: MyString
+  divorcio: MyString
+  problemas_escolares: MyString
+  perdida_de_empleo: MyString
+  enfermedades: MyString
+  problemas_economicos: MyString
+  asalto: MyString
+  secuestro: MyString
+  carcel: MyString
+  problemas_genericos: MyString
+  embarazo: MyString
+  otros: MyString
+
+two:
+  matricula: 1
+  cambio_residencia: MyString
+  accidentes: MyString
+  muertes: MyString
+  separacion: MyString
+  divorcio: MyString
+  problemas_escolares: MyString
+  perdida_de_empleo: MyString
+  enfermedades: MyString
+  problemas_economicos: MyString
+  asalto: MyString
+  secuestro: MyString
+  carcel: MyString
+  problemas_genericos: MyString
+  embarazo: MyString
+  otros: MyString

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  matricula: 1
+  psicoterapia: MyString
+  motivo: MyString
+  medicacion: MyString
+  internamiento: MyString
+  otros_servicios: MyString
+  circunstancias_consultas: MyString
+
+two:
+  matricula: 1
+  psicoterapia: MyString
+  motivo: MyString
+  medicacion: MyString
+  internamiento: MyString
+  otros_servicios: MyString
+  circunstancias_consultas: MyString

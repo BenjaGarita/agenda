@@ -1,0 +1,82 @@
+<%= form_for(@datos_significativo) do |f| %>
+  <% if @datos_significativo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@datos_significativo.errors.count, "error") %> prohibited this datos_significativo from being saved:</h2>
+
+      <ul>
+      <% @datos_significativo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :matricula %>
+    <%= f.number_field :matricula %>
+  </div>
+  <div class="field">
+    <%= f.label :cambio_residencia %><br />
+    <%= f.text_field :cambio_residencia %>
+  </div>
+  <div class="field">
+    <%= f.label :accidentes %><br />
+    <%= f.text_field :accidentes %>
+  </div>
+  <div class="field">
+    <%= f.label :muertes %><br />
+    <%= f.text_field :muertes %>
+  </div>
+  <div class="field">
+    <%= f.label :separacion %><br />
+    <%= f.text_field :separacion %>
+  </div>
+  <div class="field">
+    <%= f.label :divorcio %><br />
+    <%= f.text_field :divorcio %>
+  </div>
+  <div class="field">
+    <%= f.label :problemas_escolares %><br />
+    <%= f.text_field :problemas_escolares %>
+  </div>
+  <div class="field">
+    <%= f.label :perdida_de_empleo %><br />
+    <%= f.text_field :perdida_de_empleo %>
+  </div>
+  <div class="field">
+    <%= f.label :enfermedades %><br />
+    <%= f.text_field :enfermedades %>
+  </div>
+  <div class="field">
+    <%= f.label :problemas_economicos %><br />
+    <%= f.text_field :problemas_economicos %>
+  </div>
+  <div class="field">
+    <%= f.label :asalto %><br />
+    <%= f.text_field :asalto %>
+  </div>
+  <div class="field">
+    <%= f.label :secuestro %><br />
+    <%= f.text_field :secuestro %>
+  </div>
+  <div class="field">
+    <%= f.label :carcel %><br />
+    <%= f.text_field :carcel %>
+  </div>
+  <div class="field">
+    <%= f.label :problemas_genericos %><br />
+    <%= f.text_field :problemas_genericos %>
+  </div>
+  <div class="field">
+    <%= f.label :embarazo %><br />
+    <%= f.text_field :embarazo %>
+  </div>
+  <div class="field">
+    <%= f.label :otros %><br />
+    <%= f.text_field :otros %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+
+  </div>
+<% end %>
